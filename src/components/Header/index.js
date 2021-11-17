@@ -6,11 +6,8 @@ import Nav from '../Nav';
 function Header() {    
 
     return (
-        <header class="container-fluid">
-            <div class="row bg-dark text-white">
-                <div class="col-2">
-                    <img src={profileImg} className="img-thumbnail" id="profile-pic" alt="Profile pic" />
-                </div>
+        <header class="container-fluid mb-4">
+            <div class="row bg-dark text-white">                
                 <div class="col-3">
                     <h3>John Ripplinger's Portfolio</h3>
                 </div>
