@@ -8,22 +8,36 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 
 function App() {
+  const [contactSelected, setContactSelected] = useState(false);
+  const [projectsSelected, setProjectsSelected] = useState(false);
+  const [resumeSelected, setResumeSelected] = useState(false);
 
   return (
     <div>
       <Header>
 
-        <Nav></Nav>
+        <Nav
+          contactSelected={contactSelected}
+          setContactSelected={setContactSelected}
+          projectsSelected={projectsSelected}
+          setProjectsSelected={setProjectsSelected}
+          resumeSelected={resumeSelected}
+          setResumeSelected={setResumeSelected}
+        ></Nav>
 
       </Header>
 
-      <About></About>
-
-      <Contact></Contact>
-
-      <Projects></Projects>
-
-      <Resume></Resume>
+      <main>
+        {contactSelected ? (
+          <Contact></Contact>
+        ) : projectsSelected ? (
+          <Projects></Projects>
+        ) : resumeSelected ? (
+          <Resume></Resume>
+        ) : (
+          <About></About>
+        )}
+      </main>
 
       <Footer></Footer>
 

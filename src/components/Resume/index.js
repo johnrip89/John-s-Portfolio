@@ -2,8 +2,8 @@ import React from 'react';
 
 function Resume() {
     return (
-        <div class="row bg-light text-dark ml-2">
-            <div class="col-5">
+        <div className="row bg-light text-dark ml-2">
+            <div className="col-5">
                 <h3>Resume</h3>
                 <a>Download my resume</a>
                 <h4>Front-End Experience</h4>

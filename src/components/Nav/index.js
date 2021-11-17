@@ -1,22 +1,26 @@
 import React from 'react';
-import { capitalizeFirstLetter } from '../../utils/helpers';
 
-function Nav() {   
+function Nav(props) {    
+    const {        
+        setContactSelected,        
+        setProjectsSelected,        
+        setResumeSelected,
+    } = props;   
 
     return (
-        <div class="col-7">
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link" href="">About Me</a>
+        <div className="col-7">
+            <ul className="nav nav-tabs">
+                <li className="nav-item">
+                    <a className="nav-link" href="" onClick={() => {setContactSelected(false); setResumeSelected(false); setProjectsSelected(false);}}>About Me</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
+                <li className="nav-item">
+                    <a className="nav-link" href="#contact" onClick={() => setContactSelected(true)}>Contact</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Portfolio</a>
+                <li className="nav-item">
+                    <a className="nav-link" href="#projects" onClick={() => {setContactSelected(false); setResumeSelected(false); setProjectsSelected(true);}}>Portfolio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Resume</a>
+                <li className="nav-item">
+                    <a className="nav-link" href="" onClick={() => {setContactSelected(false); setResumeSelected(true); setProjectsSelected(false);}}>Resume</a>
                 </li>
             </ul>
         </div>
