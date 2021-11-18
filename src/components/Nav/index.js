@@ -11,16 +11,16 @@ function Nav(props) {
         <div className="col-7">
             <ul className="nav nav-tabs">
                 <li className="nav-item">
-                    <a className="nav-link" href="" onClick={() => {setContactSelected(false); setResumeSelected(false); setProjectsSelected(false);}}>About Me</a>
+                    <a className="nav-link" onClick={() => {setContactSelected(false); setResumeSelected(false); setProjectsSelected(false);}}>About Me</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#contact" onClick={() => setContactSelected(true)}>Contact</a>
+                    <a className="nav-link" onClick={() => {setContactSelected(true); setResumeSelected(false); setProjectsSelected(false);}}>Contact</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#projects" onClick={() => {setContactSelected(false); setResumeSelected(false); setProjectsSelected(true);}}>Portfolio</a>
+                    <a className="nav-link" onClick={() => {setContactSelected(false); setResumeSelected(false); setProjectsSelected(true);}}>Portfolio</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="" onClick={() => {setContactSelected(false); setResumeSelected(true); setProjectsSelected(false);}}>Resume</a>
+                    <a className="nav-link" onClick={() => {setContactSelected(false); setResumeSelected(true); setProjectsSelected(false);}}>Resume</a>
                 </li>
             </ul>
         </div>

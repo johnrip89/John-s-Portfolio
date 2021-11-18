@@ -16,12 +16,11 @@ function App() {
     <div>
       <Header>
 
-        <Nav
-          contactSelected={contactSelected}
+        <Nav          
           setContactSelected={setContactSelected}
-          projectsSelected={projectsSelected}
+          
           setProjectsSelected={setProjectsSelected}
-          resumeSelected={resumeSelected}
+         
           setResumeSelected={setResumeSelected}
         ></Nav>
 
