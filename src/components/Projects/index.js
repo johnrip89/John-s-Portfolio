@@ -48,6 +48,17 @@ function Projects() {
                         <a href="https://johnrip89.github.io/run-buddy/">click here.</a>
                     </div>
                 </div>
+                <div className="card col-6">
+                    <a href="https://dnd-character-sheet-manager.herokuapp.com/login">
+                        <img src={require(`../../Assets/images/124807.jpg`).default}
+                            className="card-img-top" alt="" />
+                    </a>
+                    <div className="card-body">
+                        <h5 className="card-title">D&D Game Manager</h5>
+                        <p className="card-text">A D&D platform for party and character creations.</p>
+                        <a href="https://dnd-character-sheet-manager.herokuapp.com/login">click here.</a>
+                    </div>
+                </div>
                 <div className="card col-3">
                     <a href="https://johnrip89.github.io/git-it-done/">
                         <img src={require(`../../Assets/images/github.png`).default}
@@ -60,27 +71,44 @@ function Projects() {
                         <a href="https://johnrip89.github.io/git-it-done/">click here.</a>
                     </div>
                 </div>
-                <div className="card col-3">
-                    <a href="https://dnd-character-sheet-manager.herokuapp.com/login">
-                        <img src={require(`../../Assets/images/124807.jpg`).default}
+            </div>
+
+
+            <div className="row bg-dark mb-4">
+                {/* <div className="card col-3">
+                    <a href="https://johnrip89.github.io/Password-Generator/">
+                        <img src={require(`../../Assets/images/Generate-Password.png`).default}
                             className="card-img-top" alt="" />
                     </a>
                     <div className="card-body">
-                        <h5 className="card-title">D&D Game Manager</h5>
-                        <p className="card-text"></p>
-                        <a href="https://dnd-character-sheet-manager.herokuapp.com/login">click here.</a>
+                        <h5 className="card-title">Password Generator</h5>
+                        <p className="card-text">Set requirements and automatically generate a random password.</p>
+                        <a href="https://johnrip89.github.io/Password-Generator/">click here.</a>
                     </div>
-                </div>
-                <div className="card col-3">
-                    {/* <img src={require(`../../Assets/images/Generate-Password.png`).default}
-                            class="card-img-top" alt="" /> */}
+                </div> */}
+                <div className="card col-12">
+                    <a href="https://salonme.herokuapp.com/">
+                        <img src={require(`../../Assets/images/SalonMe.png`).default}
+                            className="card-img-top" alt="" />
+                    </a>
                     <div className="card-body">
-                        <h5 className="card-title">Coming soon...</h5>
-                        <p className="card-text"></p>
-
+                        <h5 className="card-title">SalonMe</h5>
+                        <p className="card-text">A salon e-commerce website.  Also has the ability to sign-up, login, and schedule appointments.</p>
+                        <a href="https://salonme.herokuapp.com/">click here.</a>
                     </div>
                 </div>
+                {/* <div className="card col-3">
+                    <a href="https://johnrip89.github.io/Horiseon/">
+                        <img src={require(`../../Assets/images/digital-marketing-meeting.jpg`).default} className="card-img-top" alt="" />
+                    </a>
+                    <div className="card-body">
+                        <h5 className="card-title">Horiseon</h5>
+                        <p className="card-text">A website for a company that provides services to boost online efficency.</p>
+                        <a href="https://johnrip89.github.io/Horiseon/">click here.</a>
+                    </div>
+                </div>                              */}
             </div>
+            &nbsp 
         </section>
     );
 }

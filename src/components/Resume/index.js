@@ -5,7 +5,7 @@ function Resume() {
         <div className="row bg-light text-dark ml-2">
             <div className="col-5">
                 <h3>Resume</h3>
-                <a href="../../Assets/images/Resume.pdf" type="application/octet-stream" target="_blank" download>Download my resume</a>
+                <a href="https://github.com/johnrip89/John-s-Portfolio/blob/main/src/Assets/images/Resume.pdf">View/Download my resume</a>
                 <h4>Front-End Experience</h4>
                 <ul>
                     <li>HTML</li>
