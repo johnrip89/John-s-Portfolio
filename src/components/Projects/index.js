@@ -49,14 +49,14 @@ function Projects() {
                     </div>
                 </div>
                 <div className="card col-6">
-                    <a href="https://dnd-character-sheet-manager.herokuapp.com/login">
+                    <a href="https://dnd-character-sheet-manager.herokuapp.com">
                         <img src={require(`../../Assets/images/124807.jpg`).default}
                             className="card-img-top" alt="" />
                     </a>
                     <div className="card-body">
                         <h5 className="card-title">D&D Game Manager</h5>
                         <p className="card-text">A D&D platform for party and character creations.</p>
-                        <a href="https://dnd-character-sheet-manager.herokuapp.com/login">click here.</a>
+                        <a href="https://dnd-character-sheet-manager.herokuapp.com">click here.</a>
                     </div>
                 </div>
                 <div className="card col-3">
